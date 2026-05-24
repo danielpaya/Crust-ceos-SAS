@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rastree su langosta en tiempo real. Consulte el estado emocional, logístico y marítimo de su pedido. Crustáceos SAS.">
+  <title>Rastreo de Pedidos — Crustáceos SAS</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📍</text></svg>">
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main class="main-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__badge">📍 Sistema de rastreo crustáceo en tiempo real</span>
+          <h1 class="hero__title">Rastree su <span class="hero__title-accent">langosta</span> en tiempo real</h1>
+          <p class="hero__subtitle">Ingrese el código de rastreo crustáceo y consulte el estado emocional, logístico y marítimo de su pedido.</p>
+        </div>
+      </div>
+      <div class="hero__decoration" aria-hidden="true">📍</div>
+      <div class="hero__wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="var(--color-sand-light)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Buscador de rastreo -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="rastreo-search">
+          <h2>🔍 Ingrese su código de rastreo</h2>
+          <p class="text-light">Escriba el código que recibió por fax, señal de humo o presentimiento marítimo.</p>
+
+          <form id="rastreo-form">
+            <div class="rastreo-input-group">
+              <input type="text" class="form-input" id="rastreo-input" placeholder="Ej: LNG-404-PINZA" required>
+              <button type="submit" class="btn btn--primary">📍 Rastrear</button>
+            </div>
+          </form>
+
+          <div class="rastreo-examples">
+            <span>Prueba con:</span>
+            <span class="rastreo-example">LNG-404-PINZA</span>
+            <span class="rastreo-example">CMR-FAX-1998</span>
+            <span class="rastreo-example">CRB-SOPORTE-007</span>
+          </div>
+        </div>
+
+        <!-- Resultados (se llenan dinámicamente) -->
+        <div id="rastreo-results"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/pages/rastreo.js"></script>
+</body>
+</html>

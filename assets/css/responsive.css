@@ -1,0 +1,132 @@
+/* ============================================================
+   RESPONSIVE.CSS — Crustáceos SAS
+   Breakpoints: 480px, 768px, 1024px
+   ============================================================ */
+
+/* --- Tablet & Below (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+  :root {
+    --text-5xl: 2.5rem;
+    --text-4xl: 2rem;
+    --text-6xl: 3rem;
+  }
+
+  .hero { min-height: 420px; padding: var(--space-16) 0 var(--space-12); }
+  .hero__decoration { display: none; }
+  .section { padding: var(--space-12) 0; }
+
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: var(--space-8); }
+
+  .contacto-wrapper { grid-template-columns: 1fr; }
+}
+
+/* --- Tablet Portrait & Below (max-width: 768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.25rem;
+    --text-4xl: 1.75rem;
+    --text-3xl: 1.5rem;
+    --text-2xl: 1.25rem;
+    --header-height: 64px;
+  }
+
+  /* Show hamburger, hide desktop nav */
+  .header__hamburger { display: flex; }
+  .header__nav { display: none; }
+
+  .hero { min-height: auto; padding: var(--space-12) 0 var(--space-10); }
+  .hero__content { max-width: 100%; }
+  .hero__actions { flex-direction: column; }
+  .hero__actions .btn { width: 100%; }
+
+  .section { padding: var(--space-10) 0; }
+  .section__header { margin-bottom: var(--space-8); }
+
+  .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
+
+  .footer__grid { grid-template-columns: 1fr; gap: var(--space-6); }
+
+  .promo-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-6);
+    font-size: var(--text-base);
+  }
+
+  /* Rastreo */
+  .rastreo-input-group { flex-direction: column; }
+
+  /* Equipo */
+  .equipo-grid { grid-template-columns: 1fr; gap: var(--space-6); }
+  .equipo-drama { padding: var(--space-6); }
+
+  /* Soporte */
+  .soporte-categories { grid-template-columns: 1fr; }
+  .soporte-priorities { grid-template-columns: 1fr 1fr; }
+
+  /* Forms */
+  .fax-form, .soporte-form, .contacto-form {
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+  }
+
+  /* CrustaBank */
+  .crustabank-calculator { padding: var(--space-6); }
+  .crustabank-products { grid-template-columns: 1fr 1fr; }
+}
+
+/* --- Mobile (max-width: 480px) --- */
+@media (max-width: 480px) {
+  :root {
+    --text-5xl: 1.875rem;
+    --text-4xl: 1.5rem;
+    --text-3xl: 1.25rem;
+    --space-6: 1.25rem;
+  }
+
+  body { font-size: 0.9375rem; }
+
+  .container { padding-inline: var(--space-4); }
+
+  .hero { padding: var(--space-10) 0 var(--space-8); }
+
+  .card { padding: var(--space-6); }
+
+  .card--character .card__avatar { width: 110px; height: 110px; }
+
+  .btn--lg { padding: var(--space-3) var(--space-6); font-size: var(--text-sm); }
+
+  .rastreo-examples { flex-direction: column; align-items: center; }
+
+  .soporte-priorities { grid-template-columns: 1fr; }
+
+  .crustabank-products { grid-template-columns: 1fr; }
+
+  .footer__bottom { font-size: 0.65rem; }
+
+  .header__logo { font-size: var(--text-base); }
+
+  .promo-banner { font-size: var(--text-sm); padding: var(--space-4); }
+}
+
+/* --- Hover disabled on touch --- */
+@media (hover: none) {
+  .card:hover { transform: none; box-shadow: var(--shadow-md); }
+  .btn--primary:hover { transform: none; }
+  .btn--ocean:hover { transform: none; }
+}
+
+/* --- Prefer reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html { scroll-behavior: auto; }
+}

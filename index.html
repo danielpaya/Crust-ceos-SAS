@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crustáceos SAS — Camarones por fax, langostas a domicilio y soporte marítimo con actitud. Calidad que nace del agua… y se confirma por fax.">
+  <title>Crustáceos SAS — Calidad que nace del agua… y se confirma por fax</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Favicon emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦐</text></svg>">
+</head>
+<body>
+
+  <!-- Header (renderizado por JS) -->
+  <div id="site-header"></div>
+
+  <main class="main-content">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero home-hero">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__badge">🦐 Empresa Corporativa Marina desde 1998</span>
+          <h1 class="hero__title">
+            Crustáceos <span class="hero__title-accent">SAS</span>
+          </h1>
+          <p class="hero__subtitle">
+            Camarones por fax, langostas a domicilio y soporte marítimo para empresas que ya lo intentaron todo.
+          </p>
+          <p class="hero__tagline">
+            "Calidad que nace del agua… y se confirma por fax."
+          </p>
+          <div class="hero__actions">
+            <a href="faxshrimp.html" class="btn btn--primary btn--lg">📠 Enviar fax de camarón</a>
+            <a href="rastreo.html" class="btn btn--secondary btn--lg">📍 Rastrear mi langosta</a>
+            <a href="soporte.html" class="btn btn--secondary btn--lg">🎫 Abrir ticket marítimo</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__decoration" aria-hidden="true">🦐</div>
+      <div class="hero__wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="var(--color-sand-light)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section class="section section--sand home-services" id="servicios">
+      <div class="container">
+        <div class="section__header">
+          <h2>Nuestros Servicios Marítimos</h2>
+          <p>Soluciones crustáceas para cada necesidad empresarial. Desde faxes hasta finanzas, todo con olor a océano.</p>
+        </div>
+
+        <div class="grid grid--4 stagger-children">
+          <!-- FaxShrimp -->
+          <article class="card animate-on-scroll">
+            <div class="card__icon">📠</div>
+            <h3 class="card__title">FaxShrimp™</h3>
+            <p class="card__desc">Camarones por fax con trazabilidad documental. Tecnología marina de punta… de los años noventa.</p>
+            <a href="faxshrimp.html" class="btn btn--outline mt-4" style="display: inline-flex;">Enviar fax ahora</a>
+          </article>
+
+          <!-- Langosta Express -->
+          <article class="card animate-on-scroll">
+            <div class="card__icon card__icon--coral">🦞</div>
+            <h3 class="card__title">Langosta Express</h3>
+            <p class="card__desc">Entrega a domicilio con riesgo de pinza medio. Cada langosta viaja con dignidad y charla motivacional.</p>
+            <a href="langosta-express.html" class="btn btn--outline mt-4" style="display: inline-flex;">Solicitar langosta</a>
+          </article>
+
+          <!-- Mesa de Ayuda -->
+          <article class="card animate-on-scroll">
+            <div class="card__icon card__icon--green">🎫</div>
+            <h3 class="card__title">Mesa de Ayuda Marítima</h3>
+            <p class="card__desc">Tickets para camarones tristes y langostas desobedientes. Patricia Percebes atenderá su caso.</p>
+            <a href="soporte.html" class="btn btn--outline mt-4" style="display: inline-flex;">Abrir ticket</a>
+          </article>
+
+          <!-- CrustaBank -->
+          <article class="card animate-on-scroll">
+            <div class="card__icon card__icon--yellow">🏦</div>
+            <h3 class="card__title">CrustaBank</h3>
+            <p class="card__desc">La única institución financiera donde la moneda son camarones. Su dinero huele ligeramente a mar.</p>
+            <a href="crustabank.html" class="btn btn--outline mt-4" style="display: inline-flex;">Consultar saldo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROMO BANNER ==================== -->
+    <section class="section section--white" style="padding: var(--space-8) 0;">
+      <div class="container">
+        <div id="promo-banner"></div>
+      </div>
+    </section>
+
+    <!-- ==================== MINI SECTION ==================== -->
+    <section class="section section--sand">
+      <div class="container">
+        <p class="home-mini-section">
+          "No somos una startup. Somos una <span>corriente marina</span> con página web."
+        </p>
+
+        <div class="text-center mt-8">
+          <a href="equipo.html" class="btn btn--ocean btn--lg">👥 Conocer al comité del arrecife</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (renderizado por JS) -->
+  <div id="site-footer"></div>
+
+  <!-- JS -->
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/pages/home.js"></script>
+</body>
+</html>

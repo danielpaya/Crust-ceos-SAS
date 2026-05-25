@@ -1,0 +1,13 @@
+/*
+Theme Name: Crustaceos SAS Theme
+Theme URI: https://crustaceos-sas.local
+Author: Equipo CRUSTACEO SAS
+Description: Tema personalizado para el portal publico de CRUSTACEO SAS.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: crustaceos-sas
+*/
+
+/* Este archivo solo contiene el encabezado del tema.
+   Los estilos reales se cargan desde assets/css/ via functions.php */

@@ -1,0 +1,94 @@
+<?php
+/**
+ * Template Name: CrustaBank
+ * page-crustabank.php — Crustáceos SAS Theme
+ * Página de CrustaBank (migrada de crustabank.html).
+ *
+ * @package CrustaceosSAS
+ */
+
+get_header(); ?>
+
+  <main class="main-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__badge">🏦 División financiera crustácea</span>
+          <h1 class="hero__title">Crusta<span class="hero__title-accent">Bank</span></h1>
+          <p class="hero__subtitle">La institución financiera donde la moneda oficial son camarones.</p>
+          <p class="hero__tagline">"Aquí la moneda no se imprime: se pela."</p>
+          <div class="hero__actions">
+            <a href="#calculadora" class="btn btn--primary btn--lg">🦐 Calcular patrimonio</a>
+            <a href="<?php echo esc_url( home_url( '/contacto/' ) ); ?>" class="btn btn--secondary btn--lg">🏦 Abrir cuenta</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__decoration" aria-hidden="true">🏦</div>
+      <div class="hero__wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="var(--color-sand-light)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Productos financieros -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section__header">
+          <h2>Productos Financieros Marítimos</h2>
+          <p>Inversiones líquidas, créditos salados y seguros contra ataques de pinza no autorizados.</p>
+        </div>
+        <div class="crustabank-products" id="crustabank-products">
+          <!-- Renderizado por crustabank.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Frases CrustaBank -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="section__header">
+          <h2>Sabiduría Financiera Crustácea</h2>
+        </div>
+        <div class="crustabank-phrases" style="max-width: 700px; margin: 0 auto;">
+          <div class="crustabank-phrase">💰 Su saldo actual es de 42 camarones y una deuda emocional con el océano.</div>
+          <div class="crustabank-phrase">📈 Invertir en camarones nunca fue tan líquido.</div>
+          <div class="crustabank-phrase">⚠️ La rentabilidad pasada no garantiza frescura futura.</div>
+          <div class="crustabank-phrase">🌊 CrustaBank: donde su dinero huele ligeramente a mar.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="section section--sand" id="calculadora">
+      <div class="container">
+        <div class="crustabank-calculator">
+          <h3 class="crustabank-calculator__title">🧮 Calculadora de Patrimonio Crustáceo</h3>
+          <p class="text-light" style="margin-bottom: var(--space-6);">Descubra cuánto vale su fortuna marina.</p>
+
+          <form id="crustabank-calc">
+            <div class="form-group">
+              <label class="form-label" for="calc-camarones">Cantidad de camarones</label>
+              <input type="number" class="form-input" id="calc-camarones" min="0" max="999999" placeholder="Ej: 42" required>
+              <span class="form-hint">Incluya camarones físicos, emocionales y especulativos.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calc-salinidad">Nivel de salinidad (%)</label>
+              <input type="range" class="form-input" id="calc-salinidad" min="0" max="100" value="50" style="padding: var(--space-2);">
+              <span class="form-hint">Deslice para ajustar la salinidad de su inversión.</span>
+            </div>
+
+            <button type="submit" class="btn btn--ocean btn--lg btn--block">🦐 Calcular fortuna</button>
+          </form>
+
+          <div id="crustabank-result"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<?php get_footer(); ?>
